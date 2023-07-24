@@ -1,7 +1,7 @@
 #ifndef _PRINTF_H
 #define _PRINTF_H
 
-#include <stdrag.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <limits.h>
@@ -96,7 +96,7 @@ int print_binary(va_list ap, params_t *params);
 int print_octal(va_list ap, params_t *params);
 
 /* simple_printers.c modules */
-int print_from_to(cgar *start, char *stop, char *except);
+int print_from_to(char *start, char *stop, char *except);
 int print_rev(va_list ap, params_t *params);
 int print_rot13(va_list ap, params_t *params);
 
